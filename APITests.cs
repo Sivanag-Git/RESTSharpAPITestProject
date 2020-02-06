@@ -60,7 +60,7 @@ namespace RestSharpTestProject
             request.AddJsonBody(new Posts() { id = "5", title = "RESTSharp", author = "Swathi" });
             var response = client.Execute<Posts>(request);
 
-            Assert.That(response.Data.author, Is.EqualTo("Nani"), "Author not correct");
+            Assert.That(response.Data.author, Is.EqualTo("Swathi"), "Author not correct");
         }
     }
 }
